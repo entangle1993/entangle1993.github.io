@@ -15,7 +15,7 @@
     <h1>いらっしゃい</h1> 
     <p>webdriverの坑：</p>
     <p>RT：</p>
-    <img src="/Users/lu/Documents/Code/entangle1993.github.io/image/driverErr.jpg">
+    <img src="/image/driverErr.jpg">
     <p>最终发现还是chromedriver版本问题，虽然已经下了最新的driver，无参数时运行的路径不是/usr/bin里最新的chromedriver，而是/usr/local/bin（该路径的优先级较高？）的一个旧版本。删除旧版本后，不加路径也能直接运行了。</p>
     <p>但是，将driver移动至/usr/bin时，由于mac系统较高，需要先关闭rootless机制，再sudo mv进行移动
 </p>
