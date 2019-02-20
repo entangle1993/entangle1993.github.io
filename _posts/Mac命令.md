@@ -1,4 +1,5 @@
-#Mac命令
+#Mac命令  
+(两个空格md换行)  
 打开某个隐藏文件夹：open /usr/bin  
 寻找某个名字的文件：sudo find / -iname ‘chromedriver'  
 查看rootless（系统默认将会锁定 /system /sbin /usr 这三个目录）状态：csrutil status
