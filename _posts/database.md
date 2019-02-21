@@ -2,7 +2,7 @@
 在表中存在至少一个匹配时，INNER JOIN 关键字返回行。(=JOIN)
 # SQL LEFT JOIN 关键字  
 LEFT JOIN 关键字会从左表 (table_name1) 那里返回所有的行，即使在右表 (table_name2) 中没有匹配的行。  
-# case  
+## case  
 查找所有员工入职时候的薪水情况，给出emp_no以及salary， 并按照emp_no进行逆序  
 CREATE TABLE `employees` (  
 `emp_no` int(11) NOT NULL,  
