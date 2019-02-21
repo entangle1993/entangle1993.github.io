@@ -24,6 +24,6 @@ PRIMARY KEY (`emp_no`,`from_date`));
 `select emp_no,salary from salaries group by emp_no having min(from_date) order by emp_no DESC`  
 * 方法2
 直接用逗号并列查询两张表  
-`SELECT e.emp_no, s.salary FROM employees AS e, salaries AS s
-WHERE e.emp_no = s.emp_no AND e.hire_date = s.from_date
+`SELECT e.emp_no, s.salary FROM employees AS e, salaries AS s  
+WHERE e.emp_no = s.emp_no AND e.hire_date = s.from_date  
 ORDER BY e.emp_no DESC`
