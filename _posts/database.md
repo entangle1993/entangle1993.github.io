@@ -1,0 +1,1 @@
+`select emp_no,salary from salaries group by emp_no having min(from_date) order by emp_no DESC`
