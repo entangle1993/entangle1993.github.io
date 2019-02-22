@@ -23,7 +23,7 @@ GET/指从服务器上请求一个资源，这个资源的位置是/,另外，Ho
   控制器接收浏览器的请求，决定应该调用哪个模型来进行处理，然后模型用业务逻辑来处理用户的请求并返回数据，最后控制器用相应的视图格式化模型返回html字符串给浏览器，这个返回的数据，叫做响应(Response)。
 
 Response和Request是对应的，响应也包含和请求类似的数据：
-`HTTP/1.0200OK  
+`HTTP/1.0200OK
 Date:Mon,31Dec200104:25:57GMT  
 Server:Apache/1.3.14(Unix)  
 Content-type:text/html  
