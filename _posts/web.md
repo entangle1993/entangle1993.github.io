@@ -7,11 +7,10 @@
 * Connect & Request  
 根据IP找到服务器后，就可以向服务器发送请求了，请求服务器将你需要的网页发还给浏览器，浏览器和服务器传输信息的方式，就是建立连接。就像有个通道来供服务器和浏览器传递信息。    
 建立连接后，浏览器向服务器发起一个request请求，在请求中，需要告诉服务器想要的资源是什么，比如，我们请求google的首页：http://google.com:80/path?q=a#hash    
-一个URL一般由6个部分组成：协议、主机名、端口号、资源位置、queryString、hashTag;不同的path代表不同的资源，一般指页面，比较特殊的 / 是指根路径，一般会是网站的首页，和在电脑文件夹路径是同样的。    在前面所说的request请求中，包含一些数据：
-`GET / HTTP/1.1  \n
+一个URL一般由6个部分组成：协议、主机名、端口号、资源位置、queryString、hashTag;不同的path代表不同的资源，一般指页面，比较特殊的 / 是指根路径，一般会是网站的首页，和在电脑文件夹路径是同样的。    在前面所说的request请求中，包含一些数据： 
+`GET / HTTP/1.1  
 Host: google.com  
 Accept:*/*  
-
 Pragma: no-cache  
 Cache-Control: no-cache  
 User-Agent:Mozilla/4.04[en](Win95;I;Nav)`  
@@ -28,10 +27,10 @@ Response和Request是对应的，响应也包含和请求类似的数据：
 Date:Mon,31Dec200104:25:57GMT  
 Server:Apache/1.3.14(Unix)  
 Content-type:text/html  
-Last-modified:Tue,17Apr200106:46:28GMT
-Etag:"a030f020ac7c01:1e9f"
-Content-length:39725426
-Content-range:bytes554554-40279979/40279980`  
+Last-modified:Tue,17Apr200106:46:28GMT  
+Etag:"a030f020ac7c01:1e9f"  
+Content-length:39725426  
+Content-range:bytes554554-40279979/40279980`    
 响应分为两个部分：响应头和响应主体。其中网页的代码包含在响应主体中。
 * 浏览器处理及渲染  
 浏览器收到Response后，首先对其进行加载，并根据其中的代码继续向服务器请求资源(css、javascript、img等)，加载完成后对页面进行解析。  
