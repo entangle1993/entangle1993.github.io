@@ -29,6 +29,7 @@ WHERE e.emp_no = s.emp_no AND e.hire_date = s.from_date
 ORDER BY e.emp_no DESC`  
 
 查找薪水涨幅超过15次的员工号emp_no以及其对应的涨幅次数t  
+* 分析：
 1、用COUNT()函数和GROUP BY语句可以统计同一emp_no值的记录条数  
 2、根据题意，输出的涨幅次数为t，故用AS语句将COUNT(emp_no)的值转换为t  
 3、由于COUNT()函数不可用于WHERE语句中，故使用HAVING语句来限定t>15的条件  
