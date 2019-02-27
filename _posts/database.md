@@ -1,6 +1,10 @@
-# INNER JOIN  
+# SQL注入  
+SQL注入，就是通过把SQL命令插入到Web表单递交或输入域名或页面请求的查询字符串，最终达到欺骗服务器执行恶意的SQL命令，比如先前的很多影视网站泄露VIP会员密码大多就是通过WEB表单递交查询字符暴出的，这类表单特别容易受到SQL注入式攻击．
+
+# 关键字  
+## INNER JOIN  
 在表中存在至少一个匹配时，INNER JOIN 关键字返回行。(=JOIN)
-# SQL LEFT JOIN 关键字  
+## SQL LEFT JOIN 关键字  
 LEFT JOIN 关键字会从左表 (table_name1) 那里返回所有的行，即使在右表 (table_name2) 中没有匹配的行。  
 ## case  
 查找所有员工入职时候的薪水情况，给出emp_no以及salary， 并按照emp_no进行逆序  
